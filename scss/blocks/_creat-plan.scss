@@ -1,0 +1,64 @@
+
+.creat-plan-subscribe {
+    padding: 134px 85px;
+    background-color: #A2A2A2;
+    background-image: url(../../img/capucinno.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 165px;
+    .creat-plan__content {
+      max-width: 490px;
+      text-align: left;
+      color: $color-light-cream;
+    }
+    .creat-plan__heading {
+      margin-top: 0;
+      margin-bottom: 32px;
+      font-family: 'Fraunces';
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px
+    }
+    .creat-plan__desc {
+        max-width: 445px;
+        margin: 0;
+    }
+    @media only screen and (max-width:800px) {
+        .creat-plan-subscribe{
+         background-image: url(../../img/tablet-cappucino.png);
+         background-repeat: no-repeat;
+        }
+        .creat-plan__heading{
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            
+        }
+        .creat-plan__content{
+            width: 100%;
+            max-width: 410px;
+        }
+    }
+    @media only screen and (max-width: 560px){
+        .creat-plan-subscribe{
+            background-image: url(../../img/mobile-cappucino.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           .creat-plan__content{
+               width: 100%;
+               max-width: 279px;
+           }
+           .creat-plan__heading{
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+           }
+           .creat-plan__desc{
+               max-width: 280px;
+            font-size: 15px;
+            line-height: 25px;
+           }
+    }
+}

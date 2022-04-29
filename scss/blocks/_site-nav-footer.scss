@@ -1,0 +1,26 @@
+.site-nav-footer {
+    .sitenav__link:hover {
+      color: #FEFCF7;
+    }
+}
+@media only screen and (max-width:1200px) {
+  .site-nav-footer {
+    margin-top: 33px;
+    margin-bottom: 67px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .site-nav-footer{
+    display: block;
+    margin-bottom: 47px;
+    }
+    .site-nav__item
+    &:not(:last-child) {
+      margin: 0;
+      margin-bottom: 24px;
+    }
+    .site-nav__list {
+      flex-direction: column;
+    }
+  
+}

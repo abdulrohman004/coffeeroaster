@@ -1,0 +1,56 @@
+@mixin list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin cssretina {
+  @media /* only for retina displays */
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-between($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+@mixin unlistyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin greynav{
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  text-decoration: none;
+  color: $color-grey;
+}
+@mixin francurt{
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $color-light-cream;
+}

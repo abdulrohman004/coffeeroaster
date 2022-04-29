@@ -1,0 +1,66 @@
+.about-us {
+    padding-top: 137px;
+    padding-bottom: 137px;
+    padding-left: 85px;
+    background-image: url(../../img/americano.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $color-pale-orange;
+    border-radius: 10px;
+}
+.about-us__content {
+    max-width: 445px;
+}
+.about-us__heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    @include francurt;
+    font-size: 40px;
+    line-height: 48px;
+}
+.about-us__desc {
+    width: 444px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-light-cream;
+}
+@media only screen and (max-width:1200px) {
+    .about-us{
+        background-image: url(../../img/americano-tablet.png);
+      background-position: center;
+      background-size: cover;
+    }
+    .about-us__content {
+      max-width: 400px;
+      width: 100%;
+    }
+    .about-us__heading{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .about-us {
+        background-image: url(../../img/americano-mobile.png);
+      padding: 100px 24px;
+    }
+    .about-us__content {
+      text-align: center;
+      width: 100;
+      max-width: 279px;
+      
+    }
+    .about-us__heading {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .about-us__desc{
+      max-width: 279px;
+    }
+}

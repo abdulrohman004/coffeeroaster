@@ -1,0 +1,31 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Barlow', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-dark-grey-blue ;
+  background-color: $color-background;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

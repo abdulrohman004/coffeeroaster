@@ -1,0 +1,86 @@
+.coffeecreate {
+    display: flex;
+    justify-content: space-between;
+    padding: 168px 85px;
+}
+.coffeecreate__steps {
+    @include unlistyled;
+    counter-reset: item;
+}
+.coffeecreate__item {
+    counter-increment: item; 
+    padding-bottom: 24px;
+    text-align: left;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #83888F;
+    }
+    &::before {
+        margin-right: 28px;
+        content: '0' counter(item);
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;  
+    }
+}
+.coffeecreate__item-button {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    border: none;
+    background-color: transparent;
+}
+.coffecreate__form-desc-wrapper {
+    max-width: 730px;
+    padding: 27px 64px;
+    margin-bottom: 40px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    text-align: left;
+}
+.coffeecreate__form-desc-heading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.coffeecreate__form-desc {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.coffeecreate__form-desc-word {
+    color: #0E8784;
+}
+.coffeecreate__form-button {
+    margin-left: auto;
+    display: block;
+    max-width: 217px;
+}
+@media only screen and (max-width:1200px) {
+    .coffeecreate {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .coffeecreate__steps {
+     display: none;
+    }
+  
+    .coffeecreate__form-button {
+      margin-right: auto;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .coffecreate__form-desc-wrapper {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+}

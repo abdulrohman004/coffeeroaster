@@ -1,0 +1,33 @@
+.how-works-subscribe{
+    background-color: #2C343E;
+    color: $color-light-cream;
+}
+.how-works-subscribe__header{
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.how-works-subscribe__item{
+    &::after{
+        background-color: #2C343E;
+    }
+}
+.how-works-subscribe__heading{
+   color: $color-light-cream;
+}
+.how-works-subscribe__desc{
+    color: $color-light-cream;
+}
+@media only  screen and (max-width:700px) {
+     .how-works-subscribe {
+        padding: 176px 24px 87px 24px;
+     }
+     .how-works-subscribe__item{
+         align-items: center;
+     }
+}

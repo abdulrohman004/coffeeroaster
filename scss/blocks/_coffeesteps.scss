@@ -1,0 +1,95 @@
+.coffeesteps {
+    @include unlistyled;
+    margin-bottom: 88px;
+}
+.coffeesteps__step {
+    text-align: left;
+    &:not(:last-child) {
+        margin-bottom: 88px;
+    }
+}
+.coffesteps__step-heading {
+    margin-top: 0;
+    margin-bottom: 56px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;  
+}
+.coffeesteps__step-list {
+    @include unlistyled;
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+}
+.coffeesteps__step-item {
+    position: relative;
+    max-width: 228px;
+    z-index: 1;
+    &:not(:last-child) {
+        margin-right: 23px;
+    }
+}
+.coffeesteps__step-item-input:checked ~ .coffeesteps__step-item-content {
+    background-color: #0E8784;
+    color: #fff;
+}
+.coffeesteps__step-item-inner {
+    width: 100%;
+    height: 100%;
+}
+.coffeesteps__step-item-content {
+    max-width: 228px;
+    height: 100%;
+    background-color: #F4F1EB;
+    padding: 32px 28px 84px 28px;
+    border-radius: 8px;
+    display: block;
+    &:hover {
+        background-color: #FDD6BA;
+    }
+}
+.coffeesteps__step-item-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+.coffeesteps__step-item-desc {
+    margin: 0;
+}
+@media only screen and (max-width:1200px) {
+    .coffeesteps{
+        align-items: center;
+    }
+    .coffeesteps__step-item:not(:last-child) {
+      margin-right: 10px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .coffesteps__step-heading {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .coffeesteps__step-list {
+      flex-direction: column;
+    }
+    .coffeesteps__step-item {
+      max-width: 500px;
+      width: 100%;
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+    .coffeesteps__step-item-inner {
+      width: 100%;
+    }
+    .coffeesteps__step-item-content {
+      padding: 24px 25px;
+      max-width: 500px;
+    }
+}

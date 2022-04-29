@@ -1,0 +1,120 @@
+.headquarters {
+    padding-top: 351px;
+    padding-bottom: 200px;
+    padding-left: 85px;
+}
+.headquarters__header {
+    margin-bottom: 178px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-grey;
+}
+.headquarters__list {
+    display: flex;
+    @include unlistyled;
+    margin-bottom: 64px;
+}
+.headquarters__item {
+    position: relative;
+    z-index: 1;
+    max-width: 380px;
+    &:not(:last-child){
+        padding-right: 95px;
+    } 
+    &:nth-child(3){
+        max-width: 285px;
+    }
+}
+.headquarters__heading{
+    max-width: 255px;
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: $color-dark-grey-blue;
+    &::before{
+      display: block;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-position: center;
+        content:'';
+    }
+}
+.headquarters__heading-1{
+  &::before{
+    width: 41px;
+    height: 49px;
+    background-image:url(../../img/uk.svg);
+    left: -20;
+}
+}
+.headquarters__heading-2{
+  &::before{
+    width: 51px;
+    height: 50px;
+    background-image:url(../../img/canada.png);
+}
+}
+.headquarters__heading-3{
+  &::before{
+    width: 49px;
+    height: 44px;
+    background-image:url(../../img/australia.png);
+}
+}
+.headquarters__desc {
+    margin: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-dark-grey-blue;
+}
+
+@media only screen and (max-width:1200px) {
+    .headquarters {
+      padding-top: 470px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .headquarters__item {
+      padding-right: 10px;
+    }
+}
+@media only screen and (max-width:650px) {
+  .headquarters{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .headquarters__heading {
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .headquarters__list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .headquarters__item {
+    width: 100%;
+    max-width: 327px;
+    padding-right: 0;
+    &::after {
+      display: none;
+    }
+    &::before{
+        display: none;
+    }
+    &:not(:last-child) {
+      border-top: none;
+      margin-bottom: 56px;
+    }
+  }
+}

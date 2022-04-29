@@ -1,0 +1,25 @@
+/* SITE-NAV*/
+.site-nav{
+}
+.site-nav__list{
+    display: flex;
+    align-items: center;
+@include unlistyled;
+}
+.site-nav__item{
+    &:not(:last-child){
+        margin-right: 32px;
+    }
+}
+.site-nav__link{
+    @include greynav;
+    &:hover{
+      color:$color-dark-grey-blue;
+    }
+}
+@media only screen and (max-width:650px) {
+    .site-nav {
+      display: none;
+    }
+    
+}
