@@ -97,6 +97,7 @@
     padding-bottom: 120px;
   }
   .how-works__heading {
+    width: 100%;
     margin-bottom: 80px;
     font-size: 24px;
     line-height: 32px;
@@ -110,6 +111,7 @@
     width: 100%;
     max-width: 327px;
     padding-right: 0;
+  
     &::after {
       display: none;
     }
@@ -119,6 +121,7 @@
     &:not(:last-child) {
       border-top: none;
       margin-bottom: 56px;
+      padding: 0;
     }
   }
 }

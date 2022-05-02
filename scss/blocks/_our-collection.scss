@@ -89,7 +89,10 @@
       align-items: center;
       width: 100%;
       max-width: 282px;
-      margin-right: 0 47px;
+      &:not(:last-child){
+        margin: 0;
+    }
+      
       
 
     }

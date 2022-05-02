@@ -5,7 +5,7 @@
     padding-top: 100px;
     padding-bottom: 317px;
     color: $color-light-cream;
-    background-color: $color-why-us ;
+    background-color: $color-why-us;
     border-radius: 10px;
 }
 .why-us__header {
@@ -153,8 +153,11 @@
         position: relative;
         z-index: 10;
         bottom: 0;
+        margin-top: -600px;
     }
     .why-us__item{
+        flex-direction: column;
+        width: 100%;
         max-width: 573px; 
         min-height: 387px;
         padding: 72px 33px 51px 33px;
